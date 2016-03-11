@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>calculator_16_16.png</file>
+        <file>exit_16_16.png</file>
+        <file>russian_federation.png</file>
+        <file>Scheme.png</file>
+        <file>TSMFB.png</file>
+        <file>united_states.png</file>
+        <file>about.png</file>
+        <file>exit_32_32.png</file>
+    </qresource>
+    <qresource prefix="/translator">
+        <file>cool_tsmfb_ru.qm</file>
+    </qresource>
+</RCC>

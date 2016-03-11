@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Mar 13 18:55:49 2011
+Quartus II Version : 10.1 Build 153 11/29/2010 SJ Web Edition
+Revision Name : d_trigger
+Top-level Entity Name : d_trigger
+Family : Cyclone IV GX
+Device : EP4CGX15BF14C6
+Timing Models : Final
+Total logic elements : 9 / 14,400 ( < 1 % )
+    Total combinational functions : 9 / 14,400 ( < 1 % )
+    Dedicated logic registers : 8 / 14,400 ( < 1 % )
+Total registers : 0
+Total pins : 19 / 81 ( 23 % )
+Total virtual pins : 0
+Total memory bits : 0 / 552,960 ( 0 % )
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
+Total PLLs : 0 / 3 ( 0 % )

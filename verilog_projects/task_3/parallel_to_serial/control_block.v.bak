@@ -1,0 +1,107 @@
+
+// Модуль управления сериализацией
+module control_block
+	#(parameter N)
+	(
+	input  wire 		rst_i,			// 
+	input  wire 		clk_i,			//
+	input  wire 		en_i,			//
+	input  wire [7:0]	data_i,			//
+	input  wire [3:0]	count_i,		//
+	
+	output wire			load_shiftreg_o,//
+	output wire			en_o,			//
+	output wire			en_shiftreg_o,	//
+	output wire			rst_counter_o,	//
+	output wire			busy_o,			//
+	output wire [7:0]	data_o			//
+	
+	);
+	
+	// Объявление внутренних wire/reg
+	wire busy_module;
+	
+	reg	load_shiftreg;
+	reg en_module;
+	reg en_shiftreg;
+	reg rst_counter;
+	reg	en_start;
+	reg	en_end;
+	reg	active;
+	reg [N*8-1:0] buffer;
+	reg [2:0] num_byte;
+	
+	// Непрерывные присваивания
+	assign busy_module = (num_byte < N) ? 1'b0 : 1'b1;
+	assign load_shiftreg_o = load_shiftreg;
+	assign en_o = en_module;
+	assign en_shiftreg_o = en_shiftreg;
+	assign rst_counter_o = rst_counter;
+	assign busy_o = busy_module;
+	assign data_o = buffer[7:0];
+	
+	
+	always @(posedge clk_i or posedge rst_i)
+	begin
+		if (rst_i)
+		begin :asyn_block 			// асинхронный процесс
+			buffer <= 0;
+			num_byte <= 1'b0;
+			load_shiftreg <= 1'b0;
+			en_shiftreg <= 1'b0;
+			en_module <= 1'b0;
+			active <= 1'b0;
+			en_start <= 1'b0;
+			en_end <= 1'b0;
+			rst_counter <= 1'b1;
+		end
+		else
+		begin :syn_block 			// синхронный процесс
+			rst_counter <= 1'b0;
+			load_shiftreg <= 1'b0;
+			
+			if (en_start)
+			begin
+				en_module <= 1'b1;
+				en_start <= 1'b0;
+			end
+			
+			if (en_end)
+			begin
+				en_module <= 1'b0;
+				en_end <= 1'b0;
+			end
+
+			if (en_i && !busy_module)
+			begin
+				buffer <= buffer | (data_i << (num_byte * 8));
+				num_byte <= num_byte + 1'b1;
+				if (!active)
+				begin
+					rst_counter <= 1'b1;
+					load_shiftreg <= 1'b1;
+					en_shiftreg <= 1'b1;
+					en_start <= 1'b1;
+					active <= 1'b1;
+				end
+			end
+			
+			if (count_i == 4'd11)
+			begin
+				buffer <= buffer >> 8;
+				num_byte <= num_byte - 1'b1;
+				rst_counter <= 1'b1;
+				if (num_byte > 3'd1)
+					load_shiftreg <= 1'b1;
+				else
+				begin
+					rst_counter <= 1'b1;
+					en_shiftreg <= 1'b0;
+					en_end <= 1'b1;
+					active <= 1'b0;
+				end
+			end
+		end
+	end	
+	
+endmodule

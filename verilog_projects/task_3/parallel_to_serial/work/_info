@@ -1,0 +1,69 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial
+vcontrol_block
+Z1 !s100 ]7GU:KMHQO2lT[K[M]MV@2
+Z2 IRM`0IC@zMSz:RXg=Jz?L]0
+Z3 V6DOUjlc6fcQDTF<mmM=2I0
+Z4 d/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial
+Z5 w1314727439
+Z6 8/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/control_block.v
+Z7 F/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/control_block.v
+L0 3
+Z8 OV;L;6.6c;45
+r1
+!s85 0
+31
+!s101 -O0
+Z9 o-work work -O0
+Z10 tvlog95compat 1 CoverFEC 0 CoverShortCircuit 0
+vpar_to_ser
+Z11 !s100 9Y?3gK@o^ikT]<8226Y_I2
+Z12 I>ANEZo_^]0Zo?D4[BjPXm3
+Z13 VIcJialTOL5GOj3^aVe5HK2
+R4
+Z14 w1314731089
+Z15 8/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/par_to_ser.v
+Z16 F/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/par_to_ser.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s101 -O0
+R9
+R10
+vtest_par_to_ser
+Z17 !s100 WXjzKlI683bhgSTIH<HBK3
+Z18 IaVkfNZN?inT>2;ODjk]2^1
+Z19 VhD9d`9UCN4l=THkBaKWZ=3
+R4
+Z20 w1314730900
+Z21 8/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/t_par_to_ser.v
+Z22 F/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/t_par_to_ser.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s101 -O0
+R9
+R10
+vupcounter
+Z23 !s100 `LlWEInL51DS1eCWVo22N2
+Z24 I`MYQTSTY5D^V@YA=6FB@:1
+Z25 VP6i289dbb:QQU^?jh<^?>2
+R4
+Z26 w1314727126
+Z27 8/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/upcounter.v
+Z28 F/home/steel1004/For MetroTek/Task_3_correction/parallel_to_serial/upcounter.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s101 -O0
+R9
+R10

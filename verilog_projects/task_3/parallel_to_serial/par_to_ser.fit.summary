@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Aug 30 14:19:33 2011
+Quartus II Version : 10.1 Build 153 11/29/2010 SJ Web Edition
+Revision Name : par_to_ser
+Top-level Entity Name : par_to_ser
+Family : Cyclone IV GX
+Device : EP4CGX15BF14C6
+Timing Models : Final
+Total logic elements : 113 / 14,400 ( < 1 % )
+    Total combinational functions : 113 / 14,400 ( < 1 % )
+    Dedicated logic registers : 67 / 14,400 ( < 1 % )
+Total registers : 0
+Total pins : 14 / 81 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 0 / 552,960 ( 0 % )
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
+Total PLLs : 0 / 3 ( 0 % )

@@ -1,0 +1,13 @@
+
+QwtVersion = 6.0.1
+
+unix {
+    QwtBase     = /usr/local/qwt-$${QwtVersion}
+    LIBS       += -L$${QwtBase}/lib -lqwt
+}
+win32 {
+    QwtBase     = E:/program_files/qwt-$${QwtVersion}
+    LIBS       += -L$${QwtBase}/lib -lqwt
+}
+
+INCLUDEPATH    += $${QwtBase}/src

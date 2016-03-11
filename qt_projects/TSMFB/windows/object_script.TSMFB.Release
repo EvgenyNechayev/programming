@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\plot.o
+./release\fir_filter.o
+./release\cool_tsmfb.o
+./release\dec_detail.o
+./release\lbl_scheme.o
+./release\rec_detail.o
+./release\dialog_about.o
+./release\moc_plot.o
+./release\moc_cool_tsmfb.o
+./release\moc_dec_detail.o
+./release\moc_lbl_scheme.o
+./release\moc_rec_detail.o
+./release\moc_dialog_about.o
+./release\qrc_resource.o
+);

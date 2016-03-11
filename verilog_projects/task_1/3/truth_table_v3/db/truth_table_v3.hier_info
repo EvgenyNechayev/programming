@@ -1,0 +1,8 @@
+|truth_table_v3
+a_i[0] => b_o.IN0
+a_i[0] => b_o.IN0
+a_i[1] => b_o.IN1
+a_i[1] => b_o.IN1
+b_o <= b_o.DB_MAX_OUTPUT_PORT_TYPE
+
+

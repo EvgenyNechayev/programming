@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/steel1004/For MetroTek/Task_2/simple_processor
+vadd_sub
+!s100 41cf1bHZJ9kbV=1YF<JTA3
+IQJb0NS_UOGS@h`LCG43>n2
+VKFHRdT^JZgioF4Ta`7g_b1
+Z1 d/home/steel1004/For MetroTek/Task_2/simple_processor
+w1301948730
+8/home/steel1004/For MetroTek/Task_2/simple_processor/add_sub.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/add_sub.v
+L0 2
+Z2 OV;L;6.6c;45
+r1
+!s85 0
+31
+!s101 -O0
+Z3 o-work work -O0
+vcontrol_unit
+!s100 N4RP@`=:nY]JV@eeZN3zX3
+Ie1Hc^aoJRKYNWFXd1iVOW1
+Vg3BAl?Wg:iNXDhGNI7^c80
+R1
+w1301949492
+8/home/steel1004/For MetroTek/Task_2/simple_processor/control_unit.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/control_unit.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vdec3to8
+!s100 0K5fSQU<hmV6]Rd9c:1@70
+I[:ldj:D0_iG<3:j42bRSf3
+V2U@bIaW;LG20I9][;hcGb3
+R1
+w1301904110
+8/home/steel1004/For MetroTek/Task_2/simple_processor/dec3to8.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/dec3to8.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vmux_bus
+!s100 WjA74AziIA3hnCf3fRNS<1
+IKj>:6bicU9_H6E00@gU^>2
+VJz=AG_I6j]V[KX6Vj[@^c2
+R1
+w1301948642
+8/home/steel1004/For MetroTek/Task_2/simple_processor/mux_bus .v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/mux_bus .v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vregn
+!s100 k0bhPfUVV=K?8m<92B7OM0
+IFQLme1J=e7>L9UnAjF3_F0
+VzjkOhc2L?eHLD2Ae:J5Hl0
+R1
+w1301690428
+8/home/steel1004/For MetroTek/Task_2/simple_processor/regn.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/regn.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vsimple_processor
+!s100 M<bTkbWBTGFHg`<DEhI1`1
+I5R;CTi40NF@1_W:chfYl@2
+VeIgVX^keTLlY_zA8;`YMj3
+R1
+w1301948748
+8/home/steel1004/For MetroTek/Task_2/simple_processor/simple_processor.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/simple_processor.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vtest_simple_processor
+!s100 aKa;4UzWjcHZIGWjozR^;3
+I=mNaI5;e@j<[B8ZV8H=V]3
+V=0;f3kP5lo6H7TbYR>^kG2
+R1
+w1301948507
+8/home/steel1004/For MetroTek/Task_2/simple_processor/t_simple_processor.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/t_simple_processor.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+vupcounter
+!s100 4]D=XzcFDAQfDgXHzC]ZJ1
+IcUj^A7cWGc?mA2VF@0R922
+V[@>maY]KgG64Bce@gk^Nm1
+R1
+w1301825898
+8/home/steel1004/For MetroTek/Task_2/simple_processor/upcounter.v
+F/home/steel1004/For MetroTek/Task_2/simple_processor/upcounter.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3

@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\plot.o
+./debug\fir_filter.o
+./debug\cool_tsmfb.o
+./debug\dec_detail.o
+./debug\lbl_scheme.o
+./debug\rec_detail.o
+./debug\dialog_about.o
+./debug\moc_plot.o
+./debug\moc_cool_tsmfb.o
+./debug\moc_dec_detail.o
+./debug\moc_lbl_scheme.o
+./debug\moc_rec_detail.o
+./debug\moc_dialog_about.o
+./debug\qrc_resource.o
+);

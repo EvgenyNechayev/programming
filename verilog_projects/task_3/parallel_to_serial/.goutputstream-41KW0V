@@ -1,0 +1,51 @@
+
+//  
+module par_to_ser
+	#(parameter PREAMBLE = 6,			//  
+				MAX_WORD = 5		//     
+	)
+	(
+	input  wire 		rst_i,			//    
+	input  wire 		clk_i,			//  
+	input  wire 		en_i,			//    
+	input  wire [7:0]	prl_data_i,		// 
+	
+	output wire			ser_data_o,	//    
+	output wire	 		en_o,		//       
+	output wire			busy_o		//   
+	);
+	
+	//   wire
+	wire [12:0] data_packet;
+	wire [3:0]  count;
+	wire [7:0]  data;
+	wire load_shiftreg;
+	wire en_shiftreg;
+	wire rst_counter;
+	wire busy_module;
+	wire en_module;
+	//  
+	assign en_o = en_module;
+	assign busy_o = busy_module;
+	assign data_packet = {^data, data, PREAMBLE[3:0]};
+	
+	control_block #(.N(MAX_WORD))	control_block_instance
+		(.rst_i(rst_i), .clk_i(clk_i), .en_i(en_i), .data_i(prl_data_i), .count_i(count),
+		 .load_shiftreg_o(load_shiftreg), .en_shiftreg_o(en_shiftreg), .en_o(en_module),
+		 .rst_counter_o(rst_counter), .busy_o(busy_module), .data_o(data)
+		);
+
+	upcounter upcounter_instance
+		(.rst_i(rst_counter), .clk_i(clk_i), .en_i(en_shiftreg),
+		 .count_o(count)
+		);
+
+	lpm_shiftreg shiftreg_13bits
+		(.clock(clk_i), .data(data_packet), .enable(en_shiftreg), .load(load_shiftreg),
+		 .shiftout(ser_data_o)
+		);
+		defparam shiftreg_13bits.lpm_type = "LPM_SHIFTREG";
+		defparam shiftreg_13bits.lpm_direction = "RIGHT";
+		defparam shiftreg_13bits.lpm_width = 13;
+
+endmodule

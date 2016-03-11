@@ -1,0 +1,12 @@
+cpp_projects/design_patterns/Debug
+cpp_projects/design_patterns/.cproject
+cpp_projects/design_patterns/.project
+cpp_projects/design_patterns/.settings
+cpp_projects/libs
+Workspaces
+arm_projects
+learning_projects
+*.xlsx
+*.desktop
+*.jpg
+python_projects/scripts/parsing_sites/parsing.py
